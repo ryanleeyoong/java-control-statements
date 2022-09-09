@@ -6,9 +6,11 @@ public class ifStatement {
 				
 		SimpleIf simpleIfObj = new SimpleIf();
 		IfElse ifElseObj = new IfElse();
+		IfElseIf ifElseIfObj = new IfElseIf();
 		
 		simpleIfObj.simpleIfMethod();
 		ifElseObj.IfElseMethod();
+		ifElseIfObj.IfElseIfMethod();
 	}
 	
 }
@@ -38,7 +40,7 @@ class IfElse {
 	
 	void IfElseMethod() {
 		if(x == 5) {
-			System.out.println("\n" + "If-else {" + "\n\n" + " x is 5");
+			System.out.println("\n" + "If-else {" + "\n\n" + " x is 5 || Program does not enter else block when condition is satisfied");
 		}
 		
 		else {
@@ -53,5 +55,31 @@ class IfElse {
 			System.out.println("\n"+" y is not 5 || Program enters else block when condition is unsatisfied" 
 					+ "\n\n" + "}");
 		}
+	}
+}
+
+//the class for if-else-if ladder 
+class IfElseIf {
+	int x = 5;
+	int y = 6;
+	
+	void IfElseIfMethod() {
+		if(x == 5) {
+			System.out.println("\n" + "If-else-if {" + "\n\n" + " x is 5 || Program does not enter else-if & else block when condition is satisfied");
+		}
+		
+		else if( x + y == 11) {
+			System.out.println("x + y is 11");
+		}
+		
+		else if(y == 6) {
+			System.out.println("y is 6");
+		}
+		
+		else {
+			System.out.println("else statement reached");
+		}
+		
+		System.out.println("\n" + "}");
 	}
 }
