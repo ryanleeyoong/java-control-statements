@@ -3,14 +3,17 @@ package javaControlStatements;
 public class ifStatement {
 	
 	public static void main(String[]args){
-				
+		
+		//Objects declared here are instances of classes, object = instance. 
 		SimpleIf simpleIfObj = new SimpleIf();
 		IfElse ifElseObj = new IfElse();
 		IfElseIf ifElseIfObj = new IfElseIf();
+		NestedIf nestedIfObj = new NestedIf();
 		
 		simpleIfObj.simpleIfMethod();
 		ifElseObj.IfElseMethod();
 		ifElseIfObj.IfElseIfMethod();
+		nestedIfObj.NestedIfMethod();
 	}
 	
 }
@@ -81,5 +84,22 @@ class IfElseIf {
 		}
 		
 		System.out.println("\n" + "}");
+	}
+}
+
+//the class for nested-if statement
+class NestedIf {
+	int x = 5;
+	int y = 6;
+	
+	void NestedIfMethod() {
+		if(x == 5) {
+			System.out.println("x is 5");
+				if(y == 6) {
+					System.out.println("y is 6");
+				}
+			System.out.println("program exits nested if block");
+		}
+		System.out.println("program exits if block");
 	}
 }
