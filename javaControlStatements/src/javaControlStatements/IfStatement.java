@@ -1,29 +1,11 @@
 package javaControlStatements;
 
-public class ifStatement {
-	
-	public static void main(String[]args){
-		
-		//Objects declared here are instances of classes, object = instance. 
-		SimpleIf simpleIfObj = new SimpleIf();
-		IfElse ifElseObj = new IfElse();
-		IfElseIf ifElseIfObj = new IfElseIf();
-		NestedIf nestedIfObj = new NestedIf();
-		
-		simpleIfObj.simpleIfMethod();
-		ifElseObj.IfElseMethod();
-		ifElseIfObj.IfElseIfMethod();
-		nestedIfObj.NestedIfMethod();
-	}
-	
-}
-
-//the class for simple if statements
-class SimpleIf {
+public class IfStatement {
 	int x = 5;
 	int y = 6;
 	
-	void simpleIfMethod() {
+	//simple if statements
+	void SimpleIfMethod() {
 		if(x+y > 10) {
 			System.out.println("Simple if {" + "\n\n" + " x + y is larger then 10");
 			
@@ -33,14 +15,8 @@ class SimpleIf {
 		+ "\n\n" + "}");
 	}
 	
-}
-
-//the class for if-else statements
-//additional = is for assigning values, while == "is equal to"
-class IfElse {
-	int x = 5;
-	int y = 6;
-	
+	//if-else statements
+	//additional = is for assigning values, while == "is equal to"
 	void IfElseMethod() {
 		if(x == 5) {
 			System.out.println("\n" + "If-else {" + "\n\n" + " x is 5 || Program does not enter else block when condition is satisfied");
@@ -59,13 +35,8 @@ class IfElse {
 					+ "\n\n" + "}");
 		}
 	}
-}
-
-//the class for if-else-if ladder 
-class IfElseIf {
-	int x = 5;
-	int y = 6;
 	
+	//the class for if-else-if ladder 
 	void IfElseIfMethod() {
 		if(x == 5) {
 			System.out.println("\n" + "If-else-if {" + "\n\n" + " x is 5 || Program does not enter else-if & else block when condition is satisfied");
@@ -85,21 +56,23 @@ class IfElseIf {
 		
 		System.out.println("\n" + "}");
 	}
-}
-
-//the class for nested-if statement
-class NestedIf {
-	int x = 5;
-	int y = 6;
 	
+	//nested-if statement
 	void NestedIfMethod() {
 		if(x == 5) {
-			System.out.println("x is 5");
+			System.out.println("\n" + "Nested-if {" + "\n\n" + "x is 5 || program enters if statement when condition is statisfied" );
 				if(y == 6) {
-					System.out.println("y is 6");
+					System.out.println("\n" + "y is 6 || program enters nested if statement when condition is statisfied");
 				}
-			System.out.println("program exits nested if block");
+			System.out.println("\n" + "program exits nested if block");
 		}
-		System.out.println("program exits if block");
+		System.out.println("\n" + "program exits if block" + "\n\n" + "}");
 	}
+	
 }
+
+
+
+
+
+
