@@ -15,6 +15,8 @@ public class MainClass {
 			
 			SwitchStatement switchObj = new SwitchStatement();
 			switchObj.SwitchStatementMethod();
+			switchObj.NestedSwitchStatementMethod();
+			
 		
 		//LOOP STATEMENTS
 		}
