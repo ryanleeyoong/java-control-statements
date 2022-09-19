@@ -1,6 +1,15 @@
 package javaControlStatements;
 
 public class ForLoops {
-	//test2
+	
+	void SimpleForLoop() {
+		
+		for(int i=0 ; i<=10; i++) {
+			System.out.println(true);
+			System.out.println(i);
+		}
+		
+		System.out.println("\n" + false);
+	}
 
 }
