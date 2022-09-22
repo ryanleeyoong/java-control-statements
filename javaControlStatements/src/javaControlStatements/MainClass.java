@@ -18,8 +18,9 @@ public class MainClass {
 			switchObj.NestedSwitchStatementMethod();
 			
 			ForLoops forObj = new ForLoops();
-			forObj.SimpleForLoop();		
-			
+			forObj.SimpleForLoop();	
+			forObj.NestedForLoop();
+			forObj.Pyramid();
 		
 		//LOOP STATEMENTS
 		}
